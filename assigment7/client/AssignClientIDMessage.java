@@ -7,10 +7,10 @@
  * Fall 2016
  */
 
-package assigment7.client;
+package client;
 
 /**
- * Message that assigns a assigment7.client ID to a assigment7.client socket.
+ * Message that assigns a client ID to a client socket.
  */
 public class AssignClientIDMessage extends Message {
     private String clientId;
@@ -20,7 +20,7 @@ public class AssignClientIDMessage extends Message {
     }
 
     public AssignClientIDMessage(String clientId) {
-        super("assign-assigment7.client-id-message");
+        super("assign-client-id-message");
         this.clientId = clientId;
     }
 

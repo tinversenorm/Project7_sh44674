@@ -7,10 +7,10 @@
  * Fall 2016
  */
 
-package assigment7.server;
+package server;
 
 /**
- * Runs the assigment7.server
+ * Runs the server
  */
 public class ServerMain {
 

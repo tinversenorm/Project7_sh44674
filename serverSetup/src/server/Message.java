@@ -7,7 +7,7 @@
  * Fall 2016
  */
 
-package server;
+package assigment7.server;
 
 /**
  * Abstract superclass for all message objects.  Sets up message type and routes getObject calls.
@@ -37,7 +37,7 @@ public abstract class Message {
         switch(messageType) {
             case "chat-message" : return ChatMessage.getObject(msginfojson);
             case "name-create-message" : return NameCreateMessage.getObject(msginfojson);
-            case "assign-client-id-message" : return AssignClientIDMessage.getObject(msginfojson);
+            case "assign-assigment7.client-id-message" : return AssignClientIDMessage.getObject(msginfojson);
             case "user-list-message" : return UserListMessage.getObject(msginfojson);
             case "group-create-message-request" : return GroupCreateMessage.Request.getObject(msginfojson);
             case "group-create-message" : return GroupCreateMessage.getObject(msginfojson);

@@ -6,7 +6,7 @@
  * Slip days used: 1
  * Fall 2016
  */
-package assigment7.client;
+package client;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -47,7 +47,7 @@ public class Client extends Application {
 
     // Client data
     private String clientName = "Client";
-    private String clientID; // name + number assigned by assigment7.server
+    private String clientID; // name + number assigned by server
     private HashMap<String, UserGroup> myGroups = new HashMap<>(); // group id: group obj
     private List<String> allUsers = new ArrayList<>();
 
@@ -62,7 +62,7 @@ public class Client extends Application {
     private Button createGroupButton;
 
     /**
-     * sets assigment7.client id
+     * sets client id
      * @param id
      */
     public void setClientID(String id) {

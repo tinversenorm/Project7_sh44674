@@ -7,10 +7,10 @@
  * Fall 2016
  */
 
-package assigment7.client;
+package server;
 
 /**
- * Sent by assigment7.client to inform assigment7.server of assigment7.client name.
+ * Sent by client to inform server of client name.
  */
 public class NameCreateMessage extends Message {
     private String clientName;

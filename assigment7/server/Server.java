@@ -7,7 +7,7 @@
  * Fall 2016
  */
 
-package assigment7.server;
+package server;
 
 import java.io.*;
 import java.net.*;
@@ -25,7 +25,7 @@ public class Server extends Observable {
     ServerSocket server;
     int idCounter = 0;
     int groupIdCtr = 0;
-    List<String> clients = new ArrayList<>(); // list of all clients with assigment7.client name + id
+    List<String> clients = new ArrayList<>(); // list of all clients with client name + id
     List<UserGroup> groups = new ArrayList<>(); // list of all groups
 
     // need to add "You" group
@@ -67,7 +67,7 @@ public class Server extends Observable {
 
     void runserver() {
         try {
-            // Create a assigment7.server socket, and define in and out streams for it
+            // Create a server socket, and define in and out streams for it
             server = new ServerSocket(port);
 
             while(true) {
@@ -105,7 +105,7 @@ public class Server extends Observable {
             String message;
             try {
                 while((message = reader.readLine()) != null) {
-                    System.out.println("assigment7.server read " + message);
+                    System.out.println("server read " + message);
                     if(message.split(" ")[0].equals("delete")){
                         removeClient(message.split(" ")[1]);
                         continue;
