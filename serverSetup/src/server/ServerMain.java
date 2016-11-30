@@ -1,7 +1,16 @@
+/* CHATROOM AssignClientIDMessage.java
+ * EE422C Project 7 submission by
+ * Pranav Harathi
+ * sh44674
+ * 16460
+ * Slip days used: 1
+ * Fall 2016
+ */
+
 package server;
 
 /**
- * Created by pranavh on 11/28/16.
+ * Runs the server
  */
 public class ServerMain {
 
